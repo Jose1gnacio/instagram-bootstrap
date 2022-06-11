@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <title>Instagram feed</title>
+</head>
+
+<body>
+  <div class="container-fluid">
+
+    <div class="row">
+
+      <div class="header">
+
+        <nav class="navbar bg-light">
+
+          <div class="col">
+            <a class="navbar-brand" href="https://www.instagram.com/">
+              <i class="fa-brands fa-instagram fa-lg">Instagram</i>
+            </a>
+          </div>
+          <div class="col d-flex justify-content-end">
+            <div class="boton">
+              <!-- Button trigger modal -->
+              <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Create a New Post
+              </button>
+
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Create a new post</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="form-floating">
+                        <textarea class="form-control" placeholder="Leave a comment here"
+                          id="floatingTextarea"></textarea>
+                        <label for="floatingTextarea"></label>
+                      </div>
+                      <div class="new-post m-2">
+                        <i class="fa-solid fa-camera-retro fa-lg p-1"></i>
+                        <i class="fa-solid fa-location-dot fa-lg p-1"></i>
+
+
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cancel</button>
+                      <button type="button" class="btn btn-secondary">Publish</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="align-self-center">
+              <div class="dropdown">
+                <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton1"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="fa-solid fa-gear fa-lg"></i>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <li class="salir"><a class="dropdown-item" href="#">Log out</a></li>
+                </ul>
+              </div>
+
+            </div>
+
+          </div>
+        </nav>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <div>
+
+        
+        <div class="d-flex justify-content-center">
+          <ul class="nav nav-pills mb-2 mt-2" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+                type="button" role="tab" aria-controls="pills-home" aria-selected="true"><i
+                  class="fa-solid fa-grip"></i></button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+                type="button" role="tab" aria-controls="pills-profile" aria-selected="false"><i
+                  class="fa-solid fa-bars"></i></button>
+            </li>
+          </ul>
+        </div>
+          <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
+              tabindex="0">
+              <div class="row">
+                <div class="col-4">
+                  <img src="https://d36tnp772eyphs.cloudfront.net/blogs/2/2019/02/The-Taj-Mahal-940x623.jpg"
+                    class="img-fluid imagen" alt="Taj Mahal">
+                </div>
+                <div class="col-4">
+                  <img src="https://d36tnp772eyphs.cloudfront.net/blogs/1/2016/03/petra-jordan9.jpg"
+                    class="img-fluid imagen" alt="Petra">
+                </div>
+                <div class="col-4">
+                  <img src="https://d36tnp772eyphs.cloudfront.net/blogs/2/2019/02/brazil-940x529.jpg"
+                    class="img-fluid imagen" alt="El cristo redentor">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-4">
+                  <img src="https://d36tnp772eyphs.cloudfront.net/blogs/2/2019/02/china-940x626.jpg"
+                    class="img-fluid imagen" alt="muralla china">
+                </div>
+                <div class="col-4">
+                  <img
+                    src="https://d36tnp772eyphs.cloudfront.net/blogs/2/2019/02/Colosseum-Rome-Italy-cityscape-destinations-940x574.jpg"
+                    class="img-fluid imagen" alt="coliseo romano">
+                </div>
+                <div class="col-4">
+                  <img
+                    src="https://d36tnp772eyphs.cloudfront.net/blogs/1/2018/02/kate-siobhan-mulligan-Machu-Picchu-seven-wonders-of-the-world.jpeg"
+                    class="img-fluid imagen" alt="machu picchu">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-4">
+                  <img
+                    src="https://d36tnp772eyphs.cloudfront.net/blogs/2/2019/02/chichen-itza-el-castillo-kukulcan-940x558.jpg"
+                    class="img-fluid imagen" alt="chichen itza">
+                </div>
+                <div class="col-4">
+                  <img
+                    src="https://imagenes.elpais.com/resizer/XFC5syIkT3-z9c26GeXdnWziubg=/1960x1470/filters:focal(3175x1245:3185x1255)/cloudfront-eu-central-1.images.arcpublishing.com/prisa/QOYRPZSOQ5D2NNM6VKYQINXPUM.jpg"
+                    class="img-fluid imagen" alt="stonehenge">
+                </div>
+                <div class="col-4">
+                  <img src="https://www.tipicochileno.cl/wp-content/uploads/2013/03/Torres-del-Paine-C.png"
+                    class="img-fluid imagen" alt="torres del paine">
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"
+              tabindex="0">
+              <div class="post-list pt-3 pb-3">
+                <div class="post">
+                  <div class="head-post d-flex justify-content-between">
+                    <div class="texto m-2">
+                      <h4><b>Taj Mahal</b><br><a
+                          href="https://www.google.com/maps/search/taj+mahal/@27.1763098,77.909972,12z/data=!3m1!4b1">India</a>
+                      </h4>
+                    </div>
+                    <div class="puntos m-2">
+                      <i class="fa-solid fa-ellipsis-vertical fa-2x"></i>
+                    </div>
+                  </div>
+                  <div class="foto">
+                    <img src="https://d36tnp772eyphs.cloudfront.net/blogs/2/2019/02/The-Taj-Mahal-940x623.jpg"
+                      class="imagen-post" alt="Taj Mahal">
+                  </div>
+                  <div class="footer">
+                    <div class="iconos d-flex justify-content-between m-2">
+                      <div>
+                        <i class="fa-regular fa-heart fa-lgx"></i>
+                        <i class="fa-regular fa-comment fa-lg"></i>
+                        <i class="fa-regular fa-paper-plane fa-lg"></i>
+                      </div>
+                      <div>
+                        <i class="fa-solid fa-bookmark fa-lg"></i>
+                      </div>
+                    </div>
+                    <div class="likes m-2">
+                      <p>Liked by <b>4GeeksAcademy</b>, <b>web</b> and <b>145.000 others</b></p>
+                    </div>
+                    <div class="comentario m-2">
+                      <p class="pb2">El Taj Mahal es obra del amor. El emperador Shah Jahan lo construyó en honor a su
+                        esposa
+                        favorita, Mumtaz Mahal, quien le dio 14 hijos y murió en labor de parto. Jahan se sintió perdido
+                        sin ella y en 1632 comenzó la construcción del mausoleo más espectacular y costoso de todo el
+                        mundo.</p>
+                      <div class="pb-2 ">
+                        Comment...
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="post">
+                  <div class="head-post d-flex justify-content-between">
+                    <div class="texto m-2">
+                      <h4><b>Petra</b><br><a
+                          href="https://www.google.com/maps/place/Petra/@30.328459,35.4421735,17z/data=!3m1!4b1!4m5!3m4!1s0x15016ef1703b6071:0x199bf908679a2291!8m2!3d30.3284544!4d35.4443622">Jordán</a>
+                      </h4>
+                    </div>
+                    <div class="puntos m-2">
+                      <i class="fa-solid fa-ellipsis-vertical fa-2x"></i>
+                    </div>
+                  </div>
+                  <div class="foto">
+                    <img src="https://d36tnp772eyphs.cloudfront.net/blogs/1/2016/03/petra-jordan9.jpg"
+                      class="imagen-post" alt="Petra">
+                  </div>
+                  <div class="footer">
+                    <div class="iconos d-flex justify-content-between m-2">
+                      <div>
+                        <i class="fa-regular fa-heart fa-lgx"></i>
+                        <i class="fa-regular fa-comment fa-lg"></i>
+                        <i class="fa-regular fa-paper-plane fa-lg"></i>
+                      </div>
+                      <div>
+                        <i class="fa-solid fa-bookmark fa-lg"></i>
+                      </div>
+                    </div>
+                    <div class="likes m-2">
+                      <p>Liked by <b>4GeeksAcademy</b>,<b>web</b> and <b>654.000 others</b></p>
+                    </div>
+                    <div class="comentario m-2">
+                      <p class="pb-2">Petra significa piedra, un nombre bastante aburrido para un lugar tan
+                        espectacular. Se
+                        encuentra en el sur de Jordán, entre el Mar Muerto y el Mar Rojo, a varias horas de la capital,
+                        Ammán, y se cree que fue fundada alrededor del año 300 AC.</p>
+                      <div class="pb-2 ">
+                        Comment...
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="post">
+                  <div class="head-post d-flex justify-content-between">
+                    <div class="texto m-2">
+                      <h4><b>El Cristo Redentor</b><br><a
+                          href="https://www.google.com/maps/place/Cristo+Redentor/@-22.951911,-43.2126759,17z/data=!3m1!4b1!4m5!3m4!1s0x997fd5984aa13f:0x9dc984d7019502de!8m2!3d-22.951916!4d-43.2104872">Brasil</a>
+                      </h4>
+                    </div>
+                    <div class="puntos m-2">
+                      <i class="fa-solid fa-ellipsis-vertical fa-2x"></i>
+                    </div>
+                  </div>
+                  <div class="foto">
+                    <img src="https://d36tnp772eyphs.cloudfront.net/blogs/2/2019/02/brazil-940x529.jpg"
+                      class="imagen-post" alt="El cristo redentor">
+                  </div>
+                  <div class="footer">
+                    <div class="iconos d-flex justify-content-between m-2">
+                      <div>
+                        <i class="fa-regular fa-heart fa-lgx"></i>
+                        <i class="fa-regular fa-comment fa-lg"></i>
+                        <i class="fa-regular fa-paper-plane fa-lg"></i>
+                      </div>
+                      <div>
+                        <i class="fa-solid fa-bookmark fa-lg"></i>
+                      </div>
+                    </div>
+                    <div class="likes m-2">
+                      <p>Liked by <b>4GeeksAcademy</b>, <b>web</b> and <b>765.000 others</b></p>
+                    </div>
+                    <div class="comentario m-2">
+                      <p class="pb-2">Esta icónica estatua se encuentra en la igualmente famosa Río de Janeiro. Fue
+                        construida entre
+                        1922 y 1931 y cuenta con treinta metros de altura. El propósito de este monumento era
+                        contrarrestar la naturaleza pecaminosa de Brasil, que había separado la iglesia del estado en
+                        1889.</p>
+                      <div class="pb-2 ">
+                        Comment...
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+
+
+
+
+              </div>
+
+
+
+
+
+
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <script src="https://kit.fontawesome.com/7d29aef1a2.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

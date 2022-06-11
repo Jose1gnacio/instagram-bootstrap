@@ -1,0 +1,24 @@
+.navbar-brand {
+    margin-left: 100px;
+}
+.dropdown {
+    margin-right: 100px;
+}
+.post-list {
+    background-color: #E2E2E2;
+}
+.post {
+    margin: 0 auto;
+    background-color: white ;
+    width: 500px;
+    border-radius: 5px;
+}
+.imagen {
+    width: 400px;
+    height: 300px;
+    object-fit: contain;
+}
+.imagen-post {
+    width: 500px;
+    ;
+}
